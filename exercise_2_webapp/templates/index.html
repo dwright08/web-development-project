@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Some of Dre's Favorite Albums</title>
+    </head>
+    <body>
+      <h1>Favorie Albums</h1>
+        <p>Here are some of my favorite albums.</p>
+        <ul>
+            {% for album in albums %}
+              <h3><a href="/albums/{{album.id}}">{{album.name}} by {{album.artist}}</a></h3>
+              <h6>Released in: {{album.year}}</h6>
+            {% endfor %}
+            <!-- <li><a href="http://127.0.0.1:5000/albums/1">Reasonable Doubt</a></li>
+            <li><a href="http://127.0.0.1:5000/albums/2">Come Get It!</a></li>
+            <li><a href="http://127.0.0.1:5000/albums/3">Illmatic</a></li>
+            <li><a href="http://127.0.0.1:5000/albums/4">Off The Wall</a></li>
+            <li><a href="http://127.0.0.1:5000/albums/5">The College Dropout</a></li> -->
+        </ul>
+    </body>
+</html>
+
